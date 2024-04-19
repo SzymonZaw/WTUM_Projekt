@@ -5,12 +5,12 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: us-west-1                          # Ustaw na preferowany region AWS
-  ECR_REPOSITORY: my-ecr-repo                    # Ustaw na nazwę twojego repozytorium Amazon ECR
-  ECS_SERVICE: my-ecs-service                    # Ustaw na nazwę twojej usługi Amazon ECS
-  ECS_CLUSTER: my-ecs-cluster                    # Ustaw na nazwę twojego klastra Amazon ECS
-  ECS_TASK_DEFINITION: .aws/task-definition.json # Ścieżka do definicji zadania Amazon ECS
-  CONTAINER_NAME: my-container                   # Nazwa kontenera w sekcji containerDefinitions twojej definicji zadania ECS
+  AWS_REGION: us-north-1                          # Ustaw na preferowany region AWS
+  ECR_REPOSITORY: wtum_projekt                   # Ustaw na nazwę twojego repozytorium Amazon ECR
+  ECS_SERVICE: WTUM_test                   # Ustaw na nazwę twojej usługi Amazon ECS
+  ECS_CLUSTER: TEST                    # Ustaw na nazwę twojego klastra Amazon ECS
+  ECS_TASK_DEFINITION: arn:aws:ecs:eu-north-1:590184109245:task-definition/4_proba:1 # Ścieżka do definicji zadania Amazon ECS
+  CONTAINER_NAME: wtum_projekt                   # Nazwa kontenera w sekcji containerDefinitions twojej definicji zadania ECS
 
 permissions:
   contents: read
